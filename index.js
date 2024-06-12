@@ -93,13 +93,5 @@ function main(){
 
 
 }
-function downloadImage() {
-    const link = document.createElement('a');
-    link.download = 'canvas_image.png';
-    link.href = canvas.toDataURL('image/png');
-    link.click();
-}
-
-document.getElementById('downloadButton').addEventListener('click', downloadImage);
 
 main()
